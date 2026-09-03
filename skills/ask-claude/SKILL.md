@@ -9,7 +9,7 @@ You hit something fuzzy and need a judgment call. Shell out to the `claude` CLI 
 Run from the repo root so `claude` can read files by relative path.
 
 ```bash
-claude -p "$(cat <<'EOF'
+claude -p --model opus --effort high "$(cat <<'EOF'
 <your question, stated plainly>
 
 Files to consider: <paths, if any>
